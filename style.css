@@ -203,6 +203,90 @@ footer {
     align-items: center;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+
+.u-matches {
+    display: flex;
+    margin: 50px;
+}
+
+.news-btns {
+    width: 20%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    height: max-content;
+    margin-right: 10px;
+}
+
+.news-btn {
+    padding: 15px 0px;
+    text-align: center;
+    background-color: white;
+    margin: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold;
+    color: black;
+}
+
+.u-matches .first {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.all-matches {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.single-matches {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.flags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.vs {
+    margin: 0px 30px;
+    font-weight: 700;
+}
+
+.single-matches-text {
+    text-align: center;
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+.single-matches-text h4 {
+    font-size: 20px;
+}
+
+.single-matches-text p {
+    color: gray;
+    margin-top: 15px;
+}
+
 @media only screen and (max-width: 900px) {
     .banner p {
         width: 100%;
@@ -266,6 +350,13 @@ footer {
 
     .b-title {
         text-align: center;
+    }
+
+    .b-title p {
+        white-space: nowrap;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .news {
