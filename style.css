@@ -203,14 +203,6 @@ footer {
     align-items: center;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    text-decoration: none;
-}
-
 .u-matches {
     display: flex;
     margin: 50px;
@@ -329,6 +321,11 @@ footer {
         margin-bottom: 50px;
     }
 
+    .all-matches {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
     .v-all button {
         margin-top: 20px;
         padding: 15px 25px;
@@ -378,6 +375,11 @@ footer {
 
     .all-news {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .all-matches {
+        grid-template-columns: repeat(1, 1fr);
+
     }
 
     .v-all {
